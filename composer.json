@@ -19,7 +19,9 @@
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0",
         "guzzlehttp/guzzle": "~6.0",
-        "electrolinux/phpquery": "^0.9.6"
+        "electrolinux/phpquery": "^0.9.6",
+        "vova07/yii2-console-runner-extension": "*",
+        "toriphes/yii2-console-runner": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

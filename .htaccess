@@ -8,9 +8,11 @@ RewriteRule ^css/(.*)$ web/css/$1 [L]
 RewriteRule ^js/(.*)$ web/js/$1 [L]
 RewriteRule ^img/(.*)$ web/img/$1 [L]
 RewriteRule (.*) /web/$1
+RewriteRule ^console /web/console.php [L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /web/index.php
-php_value default_charset utf-8
-AddType 'text/html; charset=utf-8' .html .htm .shtml
+#RewriteRule . /web/console.php
+##php_value default_charset utf-8
+##AddType 'text/html; charset=utf-8' .html .htm .shtml

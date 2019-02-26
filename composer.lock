@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5a7e805afc18035ce62281914007f6bf",
+    "content-hash": "7c19f7b66742d17094f0650247dca0d1",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -580,6 +580,101 @@
                 "mailer"
             ],
             "time": "2018-07-31T09:26:32+00:00"
+        },
+        {
+            "name": "toriphes/yii2-console-runner",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/toriphes/yii2-console-runner.git",
+                "reference": "153e1f6b6d817000e4a528f8d861492ac465bedc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/toriphes/yii2-console-runner/zipball/153e1f6b6d817000e4a528f8d861492ac465bedc",
+                "reference": "153e1f6b6d817000e4a528f8d861492ac465bedc",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": ">=2.0.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "toriphes\\console\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Giulio Ganci",
+                    "email": "giulioganci@gmail.com"
+                }
+            ],
+            "description": "Runs console command in yii web application",
+            "keywords": [
+                "application",
+                "console",
+                "extension",
+                "runner",
+                "web",
+                "yii2"
+            ],
+            "time": "2018-08-27T13:06:30+00:00"
+        },
+        {
+            "name": "vova07/yii2-console-runner-extension",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vova07/yii2-console-runner-extension.git",
+                "reference": "a705100017263dee056146309b39173974d717f9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vova07/yii2-console-runner-extension/zipball/a705100017263dee056146309b39173974d717f9",
+                "reference": "a705100017263dee056146309b39173974d717f9",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "5.*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "vova07\\console\\": [
+                        "src",
+                        "tests"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Crudu Vasile",
+                    "email": "bazillio07@yandex.ru"
+                }
+            ],
+            "description": "An extension for running console commands on background in Yii framework.",
+            "homepage": "https://github.com/vova07/yii2-console-runner-extension",
+            "keywords": [
+                "background",
+                "commands",
+                "console",
+                "runner",
+                "yii 2",
+                "yii2"
+            ],
+            "time": "2018-01-20T17:10:40+00:00"
         },
         {
             "name": "yiisoft/yii2",

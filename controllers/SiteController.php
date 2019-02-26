@@ -2,6 +2,10 @@
 
 namespace app\controllers;
 
+use app\models\AuthInst;
+use app\models\KeywordInput;
+use toriphes\console\Runner;
+use vova07\console\ConsoleRunner;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -61,7 +65,30 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $model = new KeywordInput();
+        if ($model->load(Yii::$app->request->post())) {
+
+            return $this->refresh();
+        }
+        return $this->render('index', [
+            'model' => $model,
+        ]);
+    }
+
+    public function actionT()
+    {
+        ini_set('max_execution_time', '600');
+//        echo 1;exit;
+        $model = new AuthInst();
+//        $model->auth();
+        $model->request();
+        sleep(5);
+        $page = $model->action('https://www.instagram.com/graphql/query/?query_hash=f92f56d47dc7a55b606908374b43a314&variables=%7B%22tag_name%22%3A%22yandex%22%2C%22show_ranked%22%3Afalse%2C%22first%22%3A10%2C%22after%22%3A%22QVFDeVM1VzVJQzJoQzlXWEhDdy1OUTNjUm54SzhfdUgxVnAwbWx2YXluSjZNaHl4OUh5VVdQUU4ycUhSTU5sNUJIVlptVG1JSUdCeTU0SE5vZGlfZlpLTA%3D%3D%22%7D');
+
+//        $page = $model->action('https://www.instagram.com/explore/tags/stackoverflow/');
+        $json = json_decode($page,true);
+//        var_dump($page);
+
     }
 
     /**
