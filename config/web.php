@@ -12,11 +12,7 @@ $config = [
         '@npm'   => '@vendor/npm-asset',
     ],
     'components' => [
-        'consoleRunner' => [
-            'class' => 'vova07\console\ConsoleRunner',
-            'file' => __DIR__.'/../yii.php', // or an absolute path to console file
-            'phpBinaryPath' => '/../yii.php',
-        ],
+
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => '4BY-s9ocM6Lk5CNbZ8rHeb-XiFYwkip4',

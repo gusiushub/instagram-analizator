@@ -14,10 +14,6 @@ $config = [
         '@tests' => '@app/tests',
     ],
     'components' => [
-        'consoleRunner' => [
-            'class' => 'vova07\console\ConsoleRunner',
-            'file' => 'C:/openServer/OpenServer/domains/inst/yii' // or an absolute path to console file
-        ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],

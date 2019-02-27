@@ -7,7 +7,7 @@ class AuthInst extends Model
 {
 
 
-    public function action($url)
+    public static function action($url)
     {
         $arrSetHeaders = array(
 //            'origin: https://www.instagram.com',
@@ -78,10 +78,10 @@ class AuthInst extends Model
 //        }
     }
 
-    public function request()
+     static function request()
     {
-        define('USERNAME', "");
-        define('PASSWORD', "");
+        define('USERNAME', "gusgusius");
+        define('PASSWORD', "qwerrewqzs");
         define('USERAGENT', "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36");
         define('COOKIE', USERNAME.".txt");
 
